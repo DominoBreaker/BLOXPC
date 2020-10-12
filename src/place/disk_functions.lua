@@ -6,12 +6,13 @@ local module = {}
 content = 'print("NO DATA")'
 
 function module.exec(BIOSAPIS)
-	loadstring(content)
+	local f = loadstring(content)
+	f()
 end
 
 function module.setContent(arg)
 	content = arg
-	print('shoot')
+	print(content)
 end
 
 
