@@ -26,6 +26,14 @@ function BIOSconnectDriver(drv_directive, name)
 	end
 end
 
+function sendMonitorSignal(command)
+	local function changeText(text)
+		for i,v in pairs (game.Players:GetChildren()) do
+			v.PlayerGui.screenGUI.TextLabel.Text = text
+		end
+	end
+end
+
 
 BIOSAPIS = {
 	["getState"] = BIOSgetState,
@@ -36,9 +44,15 @@ BIOSAPIS = {
 function execute(part)
 	
 	part:Remove()
+	--print('works')
 	local module = require(script.Parent.Parent.Handle.MyModule)
+	sendMonitorSignal('ee')
 	module.exec(BIOSAPIS)
+	
+end
 
+function POST()
+	
 end
 
 script.Parent.Touched:Connect(execute)
