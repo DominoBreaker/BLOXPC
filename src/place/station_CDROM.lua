@@ -1,4 +1,4 @@
---script at workspace.disk_station.CDROM
+--script at workspace.disk_station.CDROM.Script
 
 flag = true
 
