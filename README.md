@@ -1,6 +1,7 @@
 # BLOXPC
 
 BLOXPC is a singleplayer roblox game where you're given a working PC. And nothing else. Do whatever you want!
+(Play [here](https://www.roblox.com/games/5815647281/BLOXPC))
 
 ## What I can do?
 
